@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "tsx --watch ./src/server.ts",
     "test:dev": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest",
-    "build": "tsup src --out-dir build"
+    "build": "tsup --out-dir build && cp -r src/prisma build/prisma",
+    "start": "node build/server.js"
   },
   "author": "Igor Carreiro",
   "license": "ISC",

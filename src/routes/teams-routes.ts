@@ -1,7 +1,7 @@
 import { teamsController } from "@/controllers/teams-controller"
 import { checkAuthorization } from "@/middlewares/check-authorization"
 import { ensureAuthenticated } from "@/middlewares/ensure-authenticated"
-import { Roles } from "@prisma/client"
+import { Roles } from "@/prisma/generated/client"
 import { Router } from "express"
 
 const teamsRouter = Router()
